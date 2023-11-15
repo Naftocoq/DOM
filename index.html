@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopping cart</title>
+  </head>
+
+  <body>
+    <!--*********** NAVBAR **************-->
+
+    <nav class="navbar" style="background-color: #e3f2fd">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b>Chakchouka my </b>
+          <i class="fa-solid fa-heart fa-beat" style="color: #ff0000;"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--*********** Total **************-->
+    <div class="total">
+      <div>
+        <i class="fa-solid fa-cart-shopping" style="color: #a6a6a6;"></i>
+        <span id="priceT">0</span>
+      </div>
+      <button type="button" id="reset" class="btn btn-dark">RESET</button>
+    </div>
+
+    <!--*********** CARDS **************-->
+
+    <div id="cards">
+      <!--****************CARD 1***************-->
+      <div id="card" class="card" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://img.etimg.com/thumb/msid-95423731,width-650,height-488,imgsize-56196,,resizemode-75/tomatoes-canva.jpg"
+              class="img-fluid rounded-start" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" id="card-title">Tomate</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              Prix aux kilo = <span class="price">5</span> dinars
+
+              <div class="qte+like">
+                <div class="qte">
+                  <i class="fa-solid fa-square-plus" style="color: #1d8500"></i>
+                  <span id="counter">0</span>
+                  <i class="fa-solid fa-square-minus" style="color: #ac0202"></i>
+                </div>
+                <div class="like">
+                  <i class="fa-solid fa-heart" style="color: #292929"></i>
+                  <i class="fa-solid fa-trash-can" style="color: #292929"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--****************CARD 2***************-->
+      <div id="card" class="card" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://atablelepiceriefine.com/wp-content/uploads/2023/01/piment-meski.jpg"
+              class="img-fluid rounded-start" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" id="card-title">Piment</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              Prix aux kilo = <span class="price">10</span> dinars
+              <div class="qte+like">
+                <div class="qte">
+                  <i class="fa-solid fa-square-plus" style="color: #1d8500"></i>
+                  <span id="counter">0</span>
+                  <i class="fa-solid fa-square-minus" style="color: #ac0202"></i>
+                </div>
+                <div class="like">
+                  <i class="fa-solid fa-heart" style="color: #292929"></i>
+                  <i class="fa-solid fa-trash-can" style="color: #292929"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--****************CARD 3***************-->
+      <div id="card" class="card" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://www.academiedugout.fr/images/15749/1200-auto/fotolia_61211686_subscription_xl-copy.jpg?poix=50&poiy=50"
+              class="img-fluid rounded-start" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" id="card-title">Oignon</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              Prix aux kilo = <span class="price">5</span> dinars
+
+              <div class="qte+like">
+                <div class="qte">
+                  <i class="fa-solid fa-square-plus" style="color: #1d8500"></i>
+                  <span id="counter">0</span>
+                  <i class="fa-solid fa-square-minus" style="color: #ac0202"></i>
+                </div>
+                <div class="like">
+                  <i class="fa-solid fa-heart" style="color: #292929"></i>
+                  <i class="fa-solid fa-trash-can" style="color: #292929"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--****************CARD 4***************-->
+      <div id="card" class="card" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://www.mon-herboristerie.com/blog_uploads/2023/01/SP-Ail-bienfaits-1024x783.jpg"
+              class="img-fluid rounded-start" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" id="card-title">Ail</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              Prix aux kilo = <span class="price">20</span> dinars
+
+              <div class="qte+like">
+                <div class="qte">
+                  <i class="fa-solid fa-square-plus" style="color: #1d8500"></i>
+                  <span id="counter">0</span>
+                  <i class="fa-solid fa-square-minus" style="color: #ac0202"></i>
+                </div>
+                <div class="like">
+                  <i class="fa-solid fa-heart" style="color: #292929"></i>
+                  <i class="fa-solid fa-trash-can" style="color: #292929"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

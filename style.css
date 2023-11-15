@@ -1,0 +1,59 @@
+.total {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+}
+
+.price {
+  font-size: 30px;
+}
+
+#priceT {
+  font-size: 25px;
+}
+
+.fa-cart-shopping {
+  font-size: 20px;
+}
+
+#cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#card {
+  margin-bottom: 10px;
+}
+
+.qte {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+
+#card-title {
+  font-size: 35px;
+}
+
+.like {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  margin-top: 10px;
+}
+
+i {
+  cursor: pointer;
+}
+
+i:hover {
+  opacity: 0.8;
+}
